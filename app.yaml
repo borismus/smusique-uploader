@@ -12,12 +12,8 @@ handlers:
 - url: /tests/
   static_dir: tests
 
-- url: /upload/
-  static_files: upload/index.html
-  upload: upload/
-
-- url: /upload/
-  static_dir: upload
+- url: /res/
+  static_dir: res
 
 - url: /.*
   script: main.py
