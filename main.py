@@ -13,9 +13,8 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+from secret import AWS_SECRET_ACCESS_KEY, AWS_ACCESS_KEY_ID
 
-AWS_ACCESS_KEY_ID = 'AKIAJAA44SMSVX4D34NQ'
-AWS_SECRET_ACCESS_KEY = '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'
 URL_FORMAT = 'https://s3.amazonaws.com/%(bucket)s/%(path)s'
 DEFAULT_BUCKET = 'smusique'
 SMUSIQUE_UPLOAD_URL = 'http://smusiclib.appspot.com/version/'
